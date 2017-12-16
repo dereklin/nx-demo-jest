@@ -5,7 +5,7 @@
     "module": "commonjs",
     "target": "es5",
     "types": [
-      "jasmine",
+      "jest",
       "node"
     ]
   },
@@ -17,6 +17,7 @@
     "**/*.e2e-spec.ts",
     "**/*.po.ts",
     "node_modules",
-    "tmp"
+    "tmp",
+    "jest/*.ts"
   ]
 }
