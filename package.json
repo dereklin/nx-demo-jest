@@ -68,11 +68,23 @@
         "tsConfigFile": "tsconfig.spec.json"
       },
       "__TRANSFORM_HTML__": true,
-      "testResultsProcessor": "./node_modules/jest-html-reporter",
-      "collectCoverageFrom": [
-        "{apps|libs}/**/src/**/*.ts",
-        "!jest/*.ts"
-      ]
+      "testResultsProcessor": "./node_modules/jest-html-reporter"
+    },
+    "collectCoverageFrom": [
+      "{apps|libs}/**/src/**/*.ts",
+      "!jest/*.ts",
+      "!{apps|libs}/**/src/**/*module.ts",
+      "!apps/**/src/environments/*.ts",
+      "!apps/**/src/main.ts",
+      "!apps/**/src/polyfills.ts"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 60,
+        "functions": 60,
+        "lines": 60,
+        "statements": -20
+      }
     }
   },
   "jest-html-reporter": {
