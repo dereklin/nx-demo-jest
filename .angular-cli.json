@@ -30,6 +30,37 @@
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }
+    },
+    {
+      "name": "app2",
+      "root": "apps/app2/src",
+      "outDir": "dist/apps/app2",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "../../../test.js",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "../../../tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "stringutils",
+      "root": "libs/stringutils/src",
+      "test": "../../../test.js",
+      "appRoot": ""
     }
   ],
   "e2e": {
@@ -48,6 +79,14 @@
     },
     {
       "project": "apps/app1/e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/app2/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/app2/e2e/tsconfig.e2e.json",
       "exclude": "**/node_modules/**"
     }
   ],
