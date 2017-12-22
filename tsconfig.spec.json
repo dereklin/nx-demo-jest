@@ -5,8 +5,9 @@
     "module": "commonjs",
     "target": "es5",
     "types": [
-      "jest",
-      "node"
+      "jasmine",
+      "node",
+      "jasmine-expect"
     ]
   },
   "include": [

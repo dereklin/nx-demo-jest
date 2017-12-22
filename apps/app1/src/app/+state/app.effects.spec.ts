@@ -36,7 +36,7 @@ describe('AppEffects', () => {
       'should work with m.hot',
       marbles(async m => {
         actions = m.hot('-a-|', { a: { type: 'LOAD_DATA' } });
-        expect(await readAll(effects.loadData)).toEqual([{ type: 'DATA_LOADED', payload: {} }]);
+        expect(await readAll(effects.loadData)).toEqual([{ type: 'DATA_LOADED', payload: {name: 'test'} }], "they should be equal");
       })
     );
   });
