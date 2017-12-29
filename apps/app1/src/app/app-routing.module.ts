@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Route, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { CoreModule } from './core/core.module';
 
+// Importing CoreModule
+const routes: Route[] = [];
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forRoot(routes), CoreModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

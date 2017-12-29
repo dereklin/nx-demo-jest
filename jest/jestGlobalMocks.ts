@@ -1,3 +1,6 @@
+import * as $ from 'jquery';
+(<any>window).jQuery = (<any>window).$ = $;
+
 const mock = () => {
   let storage = {};
   return {
@@ -20,3 +23,7 @@ Object.defineProperty(window, 'getComputedStyle', {
 Object.defineProperty(global, 'getComputedStyle', {
   value: () => ['-webkit-appearance']
 });
+Object.defineProperty(window, 'CSS', {value: mock()});
+const { blkAnalytics } = require('../libs/third-party/blk-analytics.js');
+
+import 'owl.carousel';

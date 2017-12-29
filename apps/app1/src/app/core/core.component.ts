@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Tab } from '@nx-demo-jest/tab-nav';
 
 @Component({
   selector: 'app-core',
@@ -6,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./core.component.css']
 })
 export class CoreComponent implements OnInit {
-  constructor() {}
 
-  ngOnInit() {}
+  public tabs: Tab[];
+
+  constructor() {
+    this.tabs = [{value: 'f1', display: 'Feature 1'}, {value: 'f2', display: 'Feature 2'}]
+  }
+
+  ngOnInit() {
+  }
+
 }

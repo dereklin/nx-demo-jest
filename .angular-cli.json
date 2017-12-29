@@ -22,7 +22,8 @@
       "testTsconfig": "../../../tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "../../../node_modules/bootstrap/dist/css/bootstrap.css",
+        "styles.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -57,8 +58,20 @@
       }
     },
     {
+      "name": "not-found",
+      "root": "libs/not-found/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
       "name": "stringutils",
       "root": "libs/stringutils/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
+      "name": "tab-nav",
+      "root": "libs/tab-nav/src",
       "test": "../../../test.js",
       "appRoot": ""
     }
