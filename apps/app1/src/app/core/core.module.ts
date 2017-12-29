@@ -8,13 +8,7 @@ import { Feature1Module } from '../feature1/feature1.module';
 import { Feature2Module } from '../feature2/feature2.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    CoreRoutingModule,
-    TabNavModule,
-    Feature1Module,
-    Feature2Module
-  ],
+  imports: [CommonModule, CoreRoutingModule, TabNavModule, Feature1Module, Feature2Module],
   declarations: [CoreComponent]
 })
 export class CoreModule {}

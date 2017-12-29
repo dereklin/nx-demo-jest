@@ -1,11 +1,13 @@
-import { CoreComponent } from './core.component';
+import { Feature3Component } from '../feature3/feature3.component';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+
 import { Feature1Component } from '../feature1/feature1.component';
 import { Feature2Component } from '../feature2/feature2.component';
-import { NotFoundComponent, NotFoundModule } from '@nx-demo-jest/not-found';
+import { CoreComponent } from './core.component';
 
 const routes: Routes = [
+  // { path: 'f3', component: Feature3Component }, // having this here will make /f3 work
   {
     path: '',
     component: CoreComponent,
@@ -16,19 +18,15 @@ const routes: Routes = [
       { path: 'not-found', loadChildren: '@nx-demo-jest/not-found/src/not-found.module#NotFoundModule' },
       {
         path: '**',
-        // component: NotFoundComponent // this works
-        // loadChildren: '@nx-demo-jest/not-found/src/not-found.module#NotFoundModule' // this doesn't
-        redirectTo: 'not-found', pathMatch: 'full' // the root (/) redirects to non-found
-      },
+        redirectTo: 'not-found',
+        pathMatch: 'full'
+      }
     ]
   }
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forChild(routes),
-    NotFoundModule
-  ],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class CoreRoutingModule {}
