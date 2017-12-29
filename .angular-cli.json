@@ -3,7 +3,7 @@
   "project": {
     "name": "nx-demo-jest",
     "npmScope": "nx-demo-jest",
-    "latestMigration": "20171213-update-tsconfig-spec-to-exclude-e2e"
+    "latestMigration": "20171219-add-affected-commands"
   },
   "apps": [
     {
