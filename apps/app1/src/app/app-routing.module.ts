@@ -5,7 +5,6 @@ import { CoreModule } from './core/core.module';
 import { Feature3Component } from './feature3/feature3.component';
 import { Feature3Module } from './feature3/feature3.module';
 
-// Importing CoreModule
 const routes: Route[] = [
   { path: 'f3', component: Feature3Component }
 ];
