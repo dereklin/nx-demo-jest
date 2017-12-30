@@ -1,9 +1,11 @@
-import { Feature3Component } from '../feature3/feature3.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { Feature1Component } from '../feature1/feature1.component';
+import { Feature1Module } from '../feature1/feature1.module';
 import { Feature2Component } from '../feature2/feature2.component';
+import { Feature2Module } from '../feature2/feature2.module';
+import * as fromServices from '../services';
 import { CoreComponent } from './core.component';
 
 const routes: Routes = [
@@ -11,6 +13,9 @@ const routes: Routes = [
   {
     path: '',
     component: CoreComponent,
+    resolve: {
+      userSession: fromServices.SessionResolver
+    },
     children: [
       { path: '', redirectTo: 'f1', pathMatch: 'full' },
       { path: 'f1', component: Feature1Component },
@@ -26,7 +31,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [
+    RouterModule.forChild(routes),
+    Feature1Module,
+    Feature2Module,
+  ],
   exports: [RouterModule]
 })
 export class CoreRoutingModule {}
