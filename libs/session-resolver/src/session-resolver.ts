@@ -6,11 +6,9 @@ import { HTTPSERVICE, HttpService } from '@nx-demo-jest/http-service';
 
 @Injectable()
 export class SessionResolver implements Resolve<any> {
-
-  constructor( @Inject(HTTPSERVICE) private simpleHttpService: HttpService) { }
+  constructor(@Inject(HTTPSERVICE) private simpleHttpService: HttpService) {}
 
   public resolve() {
     return this.simpleHttpService.post('sessionService', 'getUserSession', {});
   }
-
 }

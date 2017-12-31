@@ -13,7 +13,7 @@ import { CoreComponent } from './core.component';
     CommonModule,
     CoreRoutingModule,
     TabNavModule,
-    HttpServiceModule.register({httpServiceSettings: environment.httpServiceSettings})
+    HttpServiceModule.register({ httpServiceSettings: environment.httpServiceSettings })
   ],
   declarations: [CoreComponent],
   providers: [...fromServices.services]

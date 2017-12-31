@@ -19,7 +19,7 @@ describe('CoreComponent', () => {
           RouterModule,
           CoreRoutingModule,
           RouterTestingModule,
-          HttpServiceModule.register({httpServiceSettings: {}})
+          HttpServiceModule.register({ httpServiceSettings: {} })
         ],
         schemas: [NO_ERRORS_SCHEMA]
       }).compileComponents();

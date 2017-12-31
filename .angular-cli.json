@@ -58,6 +58,12 @@
       }
     },
     {
+      "name": "http-client-service",
+      "root": "libs/http-client-service/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
       "name": "http-service",
       "root": "libs/http-service/src",
       "test": "../../../test.js",

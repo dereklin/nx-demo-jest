@@ -4,9 +4,9 @@ import { Inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { empty } from 'rxjs/observable/empty';
 
-import { HttpClientService } from './http-client.service';
 import { map, catchError } from 'rxjs/operators';
 import { of } from 'rxjs/observable/of';
+import { HttpClientService } from '@nx-demo-jest/http-client-service';
 
 @Injectable()
 export class SimpleHttpService implements HttpService {
