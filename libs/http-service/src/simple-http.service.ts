@@ -1,4 +1,3 @@
-import { HTTPSERVICESETTINGS } from './http-service.tokens';
 import { HttpService } from './http-service';
 import { Inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
@@ -7,6 +6,7 @@ import { empty } from 'rxjs/observable/empty';
 import { map, catchError } from 'rxjs/operators';
 import { of } from 'rxjs/observable/of';
 import { HttpClientService } from '@nx-demo-jest/http-client-service';
+import { HTTPSERVICESETTINGS } from '@nx-demo-jest/app-tokens';
 
 @Injectable()
 export class SimpleHttpService implements HttpService {

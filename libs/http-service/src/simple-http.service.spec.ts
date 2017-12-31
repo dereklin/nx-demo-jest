@@ -1,9 +1,9 @@
-import { HTTPSERVICESETTINGS } from './http-service.tokens';
 import { HttpClientModule } from '@angular/common/http';
 import { TestBed, inject } from '@angular/core/testing';
 
 import { SimpleHttpService } from './simple-http.service';
 import { HttpClientService } from '@nx-demo-jest/http-client-service';
+import { HTTPSERVICESETTINGS } from '@nx-demo-jest/app-tokens';
 
 describe('SimpleHttpServiceService', () => {
   beforeEach(() => {

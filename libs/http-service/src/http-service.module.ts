@@ -1,9 +1,9 @@
 import { HttpClientModule } from '@angular/common/http';
 import { SimpleHttpService } from './simple-http.service';
-import { HTTPSERVICE, HTTPSERVICESETTINGS } from './http-service.tokens';
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientService } from '@nx-demo-jest/http-client-service';
+import { HTTPSERVICESETTINGS, HTTPSERVICE } from '@nx-demo-jest/app-tokens';
 
 @NgModule({
   imports: [CommonModule, HttpClientModule]
