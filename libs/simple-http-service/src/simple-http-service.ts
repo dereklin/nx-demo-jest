@@ -6,7 +6,7 @@ import { map, catchError } from 'rxjs/operators';
 import { of } from 'rxjs/observable/of';
 import { HttpClientService } from '@nx-demo-jest/http-client-service';
 import { HTTPSERVICESETTINGS } from '@nx-demo-jest/app-tokens';
-import { HttpService } from '@nx-demo-jest/http-service';
+import { HttpService } from '@nx-demo-jest/app-interfaces';
 
 @Injectable()
 export class SimpleHttpService implements HttpService {

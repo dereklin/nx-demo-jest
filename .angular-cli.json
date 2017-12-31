@@ -58,6 +58,12 @@
       }
     },
     {
+      "name": "app-interfaces",
+      "root": "libs/app-interfaces/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
       "name": "app-tokens",
       "root": "libs/app-tokens/src",
       "test": "../../../test.js",
@@ -66,12 +72,6 @@
     {
       "name": "http-client-service",
       "root": "libs/http-client-service/src",
-      "test": "../../../test.js",
-      "appRoot": ""
-    },
-    {
-      "name": "http-service",
-      "root": "libs/http-service/src",
       "test": "../../../test.js",
       "appRoot": ""
     },
