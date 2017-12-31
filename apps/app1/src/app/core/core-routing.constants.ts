@@ -1,0 +1,2 @@
+export const COREROUTEBASE = 'to';
+export const COREROUTEBASESPACE = COREROUTEBASE ? `${COREROUTEBASE}/` : '';

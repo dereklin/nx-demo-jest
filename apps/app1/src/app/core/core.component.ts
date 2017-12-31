@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Tab } from '@nx-demo-jest/tab-nav';
 
+import { COREROUTEBASESPACE } from './core-routing.constants';
+
 @Component({
   selector: 'app-core',
   templateUrl: './core.component.html',
@@ -11,8 +13,9 @@ export class CoreComponent implements OnInit {
 
   constructor() {
     this.tabs = [
-      { value: 'f1', display: 'Feature 1' },
-      { value: 'f2', display: 'Feature 2' },
+      { value: ``, display: 'Home' },
+      { value: `${COREROUTEBASESPACE}f1`, display: 'Feature 1' },
+      { value: `${COREROUTEBASESPACE}f2`, display: 'Feature 2' },
       { value: 'f3', display: 'Feature 3' }
     ];
   }

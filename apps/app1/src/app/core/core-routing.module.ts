@@ -8,10 +8,12 @@ import { Feature2Module } from '../feature2/feature2.module';
 import * as fromServices from '../services';
 import { CoreComponent } from './core.component';
 
+import { COREROUTEBASE } from './core-routing.constants';
+
 const routes: Routes = [
   // { path: 'f3', component: Feature3Component }, // having this here will make /f3 work
   {
-    path: '',
+    path: COREROUTEBASE,
     component: CoreComponent,
     resolve: {
       userSession: fromServices.SessionResolver
