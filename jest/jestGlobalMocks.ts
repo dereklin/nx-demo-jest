@@ -24,6 +24,5 @@ Object.defineProperty(global, 'getComputedStyle', {
   value: () => ['-webkit-appearance']
 });
 Object.defineProperty(window, 'CSS', {value: mock()});
-const { blkAnalytics } = require('../libs/third-party/blk-analytics.js');
 
-import 'owl.carousel';
+// import 'owl.carousel';
