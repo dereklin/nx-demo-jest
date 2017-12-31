@@ -30,7 +30,33 @@
       "environments": {
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
+      },
+      "appShell": {
+        "app": "app1-ngu-app-shell",
+        "route": "app-shell"
       }
+    },
+    {
+      "name": "app1-ngu-app-shell",
+      "root": "apps/app1/src",
+      "outDir": "dist-server/apps/app1",
+      "assets": [],
+      "index": "index.html",
+      "main": "main.server.ts",
+      "polyfills": "polyfills.ts",
+      "test": "../../../test.ts",
+      "tsconfig": "tsconfig.server.json",
+      "testTsconfig": "../../../tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      },
+      "platform": "server",
+      "serviceWorker": false
     },
     {
       "name": "app2",
