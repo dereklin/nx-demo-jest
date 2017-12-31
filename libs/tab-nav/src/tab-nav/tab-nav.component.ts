@@ -7,12 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./tab-nav.component.scss']
 })
 export class TabNavComponent implements OnInit {
-
   @Input() public tabs: Tab[];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

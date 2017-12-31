@@ -8,5 +8,4 @@ import { RouterModule } from '@angular/router';
   declarations: [TabNavComponent],
   exports: [TabNavComponent]
 })
-export class TabNavModule {
-}
+export class TabNavModule {}

@@ -1,23 +1,21 @@
-import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TabNavComponent } from './tab-nav.component';
+import { Feature3Component } from './feature3.component';
 
-describe('TabNavComponent', () => {
-  let component: TabNavComponent;
-  let fixture: ComponentFixture<TabNavComponent>;
+describe('Feature3Component', () => {
+  let component: Feature3Component;
+  let fixture: ComponentFixture<Feature3Component>;
 
   beforeEach(
     async(() => {
       TestBed.configureTestingModule({
-        declarations: [TabNavComponent],
-        schemas: [NO_ERRORS_SCHEMA]
+        declarations: [Feature3Component]
       }).compileComponents();
     })
   );
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TabNavComponent);
+    fixture = TestBed.createComponent(Feature3Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
