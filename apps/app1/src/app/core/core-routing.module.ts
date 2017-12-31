@@ -22,12 +22,12 @@ const routes: Routes = [
       { path: '', redirectTo: 'f1', pathMatch: 'full' },
       { path: 'f1', component: Feature1Component },
       { path: 'f2', component: Feature2Component },
-      { path: 'not-found', loadChildren: '@nx-demo-jest/not-found/src/not-found.module#NotFoundModule' },
-      {
-        path: '**',
-        redirectTo: 'not-found',
-        pathMatch: 'full'
-      }
+      // { path: 'not-found', loadChildren: '@nx-demo-jest/not-found/src/not-found.module#NotFoundModule' },
+      // {
+      //   path: '**',
+      //   redirectTo: 'not-found',
+      //   pathMatch: 'full'
+      // }
     ]
   }
 ];

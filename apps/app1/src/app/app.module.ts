@@ -15,7 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     NxModule.forRoot(),
     AppRoutingModule,
     StoreModule.forRoot({ app: appReducer }, { initialState: { app: appInitialState } }),

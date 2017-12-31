@@ -7,6 +7,7 @@
     "start": "ng serve",
     "start:app1": "npm start -- --app=app1 --port 4201 --open",
     "build": "ng build",
+    "build:app1": "npm run build -- --prod --app=app1",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",

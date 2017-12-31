@@ -10,12 +10,12 @@ import { COREROUTEBASESPACE } from './core/core-routing.constants';
 const routes: Route[] = [
   { path: '', redirectTo: `${COREROUTEBASESPACE}f1`, pathMatch: 'full'},
   { path: "f3", component: Feature3Component },
-  { path: 'not-found', loadChildren: '@nx-demo-jest/not-found/src/not-found.module#NotFoundModule' },
-  {
-    path: '**',
-    redirectTo: 'not-found',
-    pathMatch: 'full'
-  }
+  // { path: 'not-found', loadChildren: '@nx-demo-jest/not-found/src/not-found.module#NotFoundModule' },
+  // {
+  //   path: '**',
+  //   redirectTo: 'not-found',
+  //   pathMatch: 'full'
+  // }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes), CoreModule, Feature3Module],
