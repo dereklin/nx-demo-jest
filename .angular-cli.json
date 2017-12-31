@@ -88,6 +88,12 @@
       "appRoot": ""
     },
     {
+      "name": "simple-http-service",
+      "root": "libs/simple-http-service/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
       "name": "stringutils",
       "root": "libs/stringutils/src",
       "test": "../../../test.js",
