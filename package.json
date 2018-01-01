@@ -16,7 +16,9 @@
     "jest": "jest",
     "apps:affected": "node ./node_modules/@nrwl/schematics/src/affected/run-affected.js apps",
     "build:affected": "node ./node_modules/@nrwl/schematics/src/affected/run-affected.js build",
-    "e2e:affected": "node ./node_modules/@nrwl/schematics/src/affected/run-affected.js e2e"
+    "e2e:affected": "node ./node_modules/@nrwl/schematics/src/affected/run-affected.js e2e",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "private": true,
   "dependencies": {
@@ -67,7 +69,12 @@
     "rxjs-marbles": "2.3.0",
     "ts-node": "4.1.0",
     "tslint": "5.8.0",
-    "typescript": "2.6.2"
+    "typescript": "2.6.2",
+    "@storybook/angular": "^3.3.3",
+    "@storybook/addon-notes": "^3.3.3",
+    "@storybook/addon-actions": "^3.3.3",
+    "@storybook/addon-links": "^3.3.3",
+    "@types/lodash-es": "^4.17.0"
   },
   "jest": {
     "preset": "jest-preset-angular",
