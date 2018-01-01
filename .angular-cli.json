@@ -33,7 +33,7 @@
       },
       "appShell": {
         "app": "app1-ngu-app-shell",
-        "route": "f3"
+        "route": "app-shell-path"
       }
     },
     {
