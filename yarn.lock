@@ -229,9 +229,9 @@
   version "0.0.11"
   resolved "https://registry.yarnpkg.com/@schematics/schematics/-/schematics-0.0.11.tgz#c8f70f270ed38f29b2873248126fd59abd635862"
 
-"@storybook/addon-actions@^3.3.3":
+"@storybook/addon-actions@3.3.3", "@storybook/addon-actions@^3.3.3":
   version "3.3.3"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.3.3.tgz#468e3426eb8f109825d9b41bf77f206711fa74b3"
+  resolved "https://registry.npmjs.org/@storybook/addon-actions/-/addon-actions-3.3.3.tgz#468e3426eb8f109825d9b41bf77f206711fa74b3"
   dependencies:
     deep-equal "^1.0.1"
     global "^4.3.2"
@@ -240,17 +240,17 @@
     react-inspector "^2.2.2"
     uuid "^3.1.0"
 
-"@storybook/addon-links@^3.3.3":
+"@storybook/addon-links@3.3.3", "@storybook/addon-links@^3.3.3":
   version "3.3.3"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-3.3.3.tgz#b5fe29f3aa3d5fe812aa9d47240846bf4d040ad1"
+  resolved "https://registry.npmjs.org/@storybook/addon-links/-/addon-links-3.3.3.tgz#b5fe29f3aa3d5fe812aa9d47240846bf4d040ad1"
   dependencies:
     "@storybook/components" "^3.3.3"
     global "^4.3.2"
     prop-types "^15.5.10"
 
-"@storybook/addon-notes@^3.3.3":
+"@storybook/addon-notes@3.3.3":
   version "3.3.3"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-notes/-/addon-notes-3.3.3.tgz#1965f57c7fe5c2ee348a2e2b37edc03bc84fce1e"
+  resolved "https://registry.npmjs.org/@storybook/addon-notes/-/addon-notes-3.3.3.tgz#1965f57c7fe5c2ee348a2e2b37edc03bc84fce1e"
   dependencies:
     babel-runtime "^6.26.0"
     prop-types "^15.6.0"
@@ -262,9 +262,9 @@
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-3.3.3.tgz#968d98a61957bc30db642b43924c3332dbaec40e"
 
-"@storybook/angular@^3.3.3":
+"@storybook/angular@3.3.3":
   version "3.3.3"
-  resolved "https://registry.yarnpkg.com/@storybook/angular/-/angular-3.3.3.tgz#47e6fd1fa39f196a8d081d558fc4d8680347aaa0"
+  resolved "https://registry.npmjs.org/@storybook/angular/-/angular-3.3.3.tgz#47e6fd1fa39f196a8d081d558fc4d8680347aaa0"
   dependencies:
     "@storybook/addon-actions" "^3.3.3"
     "@storybook/addon-links" "^3.3.3"
@@ -416,9 +416,9 @@
   version "3.2.17"
   resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.2.17.tgz#01df9805dd5cf83a14cf5bfd81adced7d4fbd970"
 
-"@types/lodash-es@^4.0.0", "@types/lodash-es@^4.17.0":
+"@types/lodash-es@4.17.0", "@types/lodash-es@^4.0.0":
   version "4.17.0"
-  resolved "https://registry.yarnpkg.com/@types/lodash-es/-/lodash-es-4.17.0.tgz#ed9044d62ee36a93e0650b112701986b1c74c766"
+  resolved "https://registry.npmjs.org/@types/lodash-es/-/lodash-es-4.17.0.tgz#ed9044d62ee36a93e0650b112701986b1c74c766"
   dependencies:
     "@types/lodash" "*"
 
@@ -2582,7 +2582,7 @@ css-in-js-utils@^2.0.0:
   dependencies:
     hyphenate-style-name "^1.0.2"
 
-css-loader@^0.28.1, css-loader@^0.28.7:
+css-loader@^0.28.1:
   version "0.28.7"
   resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-0.28.7.tgz#5f2ee989dd32edd907717f953317656160999c1b"
   dependencies:
@@ -7041,7 +7041,7 @@ raw-body@2, raw-body@2.3.2:
     iconv-lite "0.4.19"
     unpipe "1.0.0"
 
-raw-loader@^0.5.1:
+raw-loader@0.5.1, raw-loader@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-0.5.1.tgz#0c3d0beaed8a01c966d9787bf778281252a979aa"
 
@@ -7639,7 +7639,7 @@ sass-graph@^2.2.4:
     scss-tokenizer "^0.2.3"
     yargs "^7.0.0"
 
-sass-loader@^6.0.3, sass-loader@^6.0.6:
+sass-loader@6.0.6, sass-loader@^6.0.3:
   version "6.0.6"
   resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-6.0.6.tgz#e9d5e6c1f155faa32a4b26d7a9b7107c225e40f9"
   dependencies:
@@ -8277,13 +8277,6 @@ style-loader@^0.13.1:
 style-loader@^0.18.2:
   version "0.18.2"
   resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.18.2.tgz#cc31459afbcd6d80b7220ee54b291a9fd66ff5eb"
-  dependencies:
-    loader-utils "^1.0.2"
-    schema-utils "^0.3.0"
-
-style-loader@^0.19.1:
-  version "0.19.1"
-  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.19.1.tgz#591ffc80bcefe268b77c5d9ebc0505d772619f85"
   dependencies:
     loader-utils "^1.0.2"
     schema-utils "^0.3.0"
