@@ -6,7 +6,7 @@ import { RouterModule } from "@angular/router";
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 // import { TabNavComponent } from '@nx-demo-jest/tab-nav';
-import { TabNavComponent } from "../libs/tab-nav/src/tab-nav/tab-nav.component";
+import { TabNavComponent } from "../libs/tab-nav";
 
 const COREROUTEBASESPACE = "go/";
 
@@ -24,7 +24,6 @@ storiesOf("my-top-nav", module).add("basic", () => ({
       { value: `${COREROUTEBASESPACE}f1`, display: "Feature 1" },
       { value: `${COREROUTEBASESPACE}f2`, display: "Feature 2" },
       { value: "f3", display: "Feature 3" }
-    ],
-    styles: [""]
+    ]
   }
 }));
