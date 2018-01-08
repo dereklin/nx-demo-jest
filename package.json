@@ -10,6 +10,9 @@
     "build:app1": "npm run build -- --prod --app=app1",
     "build:app1:server": "npm run build -- --prod --app=app1-ngu-app-shell --output-hashing=false",
     "build:app1:client-and-server-bundles": "npm run build:app1 && npm run build:app1:server",
+    "build:app1:prerender": "npm run build:app1:client-and-server-bundles && npm run webpack:app1:server",
+    "webpack:app1:server": "webpack --config webpack.server.config.js --progress --colors",
+    "generate:app1:prerender": "cd dist && node prerender",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -42,6 +45,7 @@
     "@ngrx/router-store": "4.1.1",
     "@ngrx/store": "4.1.1",
     "@ngrx/store-devtools": "4.1.1",
+    "@nguniversal/express-engine": "^5.0.0-beta.5",
     "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.5",
     "@nrwl/nx": "0.6.7",
     "bootstrap": "4.0.0-beta",
@@ -88,7 +92,12 @@
     "ts-node": "4.1.0",
     "tslint": "5.8.0",
     "tslint-angular": "^1.0.0",
-    "typescript": "2.6.2"
+    "typescript": "2.6.2",
+    "ts-loader": "^2.3.7",
+    "cpy-cli": "^1.0.1",
+    "http-server": "^0.10.0",
+    "express": "^4.15.2",
+    "reflect-metadata": "^0.1.10"
   },
   "jest": {
     "preset": "jest-preset-angular",
