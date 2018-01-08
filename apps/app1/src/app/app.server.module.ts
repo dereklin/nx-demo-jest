@@ -6,6 +6,7 @@ import { ServerModule } from '@angular/platform-server';
 
 import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
+import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader';
 
 // this is the hack to get the window object for pre-rendering
 import * as domino from 'domino';
@@ -20,7 +21,7 @@ const win = domino.createWindow(template);
 const routes: Routes = [{ path: 'app-shell-path', component: AppShellComponent }];
 
 @NgModule({
-  imports: [AppModule, ServerModule, AppShellModule, RouterModule.forRoot(routes)],
+  imports: [AppModule, ServerModule, AppShellModule, RouterModule.forRoot(routes), ModuleMapLoaderModule],
   bootstrap: [AppComponent]
 })
 export class AppServerModule {}

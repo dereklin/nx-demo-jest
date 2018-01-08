@@ -8,9 +8,9 @@ import * as log from 'loglevel';
 
 if (environment.production) {
   enableProdMode();
-  log.setLevel("error");
+  log.setLevel('error');
 } else {
-  log.setLevel("trace");
+  log.setLevel('trace');
 }
 
 platformBrowserDynamic()
