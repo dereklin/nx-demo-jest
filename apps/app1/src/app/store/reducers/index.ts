@@ -15,7 +15,7 @@ export interface RouterStateUrl {
 }
 
 export interface State {
-  routerReducer: RouterReducerState<RouterStateUrl>
+  routerReducer: RouterReducerState<RouterStateUrl>;
 }
 
 export const reducers: ActionReducerMap<State> = {

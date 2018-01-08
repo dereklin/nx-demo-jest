@@ -1,5 +1,5 @@
 export interface App {
-  // define state here
+  test: {};
 }
 
 export interface AppState {
