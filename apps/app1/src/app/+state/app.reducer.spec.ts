@@ -5,9 +5,9 @@ import { DataLoaded } from './app.actions';
 
 describe('appReducer', () => {
   it('should work', () => {
-    const state: App = {test: {}};
+    const state: App = { test: {} };
     const action: DataLoaded = { type: 'DATA_LOADED', payload: {} };
     const actual = appReducer(state, action);
-    expect(actual).toEqual({});
+    expect(actual).toEqual({ test: {}}); 
   });
 });
