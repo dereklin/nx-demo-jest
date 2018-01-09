@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feature1.component.css']
 })
 export class Feature1Component implements OnInit {
-  constructor() {}
+  public name: string;
+
+  constructor() {
+    this.name = 'test';
+  }
 
   ngOnInit() {}
 }
