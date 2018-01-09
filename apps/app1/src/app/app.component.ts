@@ -15,4 +15,8 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.logger.debug('test');
   }
+
+  sayHello = () => {
+    return 'Hello';
+  };
 }

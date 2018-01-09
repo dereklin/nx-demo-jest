@@ -27,7 +27,7 @@ const index = readFileSync(join('browser', 'index.html'), 'utf8');
 let previousRender = Promise.resolve();
 
 // Iterate each route path
-ROUTES.forEach((route) => {
+ROUTES.forEach( route => {
   const fullPath = join(BROWSER_FOLDER, route);
 
   // Make sure the directory structure is there
@@ -36,11 +36,11 @@ ROUTES.forEach((route) => {
   }
 
   // Writes rendered HTML to index.html, replacing the file if it already exists.
-  previousRender = previousRender.then((_) => renderModuleFactory(AppServerModuleNgFactory, {
+  previousRender = previousRender.then( _ => renderModuleFactory(AppServerModuleNgFactory, {
     document: index,
     url: route,
     extraProviders: [
       provideModuleMap(LAZY_MODULE_MAP)
     ]
-  })).then((html) => writeFileSync(join(fullPath, 'index.html'), html));
+  })).then( html => writeFileSync(join(fullPath, 'index.html'), html));
 });
