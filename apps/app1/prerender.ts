@@ -17,7 +17,7 @@ import { ROUTES } from './static.paths';
 
 // * NOTE :: leave this as require() since this file is built Dynamically from webpack
 // tslint:disable-next-line
-const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./dist/apps/app1/server/main.bundle');
+const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('../../dist/apps/app1/server/main.bundle');
 
 const BROWSER_FOLDER = join(process.cwd(), 'browser');
 

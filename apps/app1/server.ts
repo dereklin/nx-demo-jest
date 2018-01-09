@@ -19,7 +19,7 @@ enableProdMode();
 const app = express();
 
 const PORT = process.env.PORT || 4000;
-const DIST_FOLDER = join(process.cwd(), 'dist/apps/app1');
+const DIST_FOLDER = join(process.cwd(), './dist/apps/app1');
 
 // Our index.html we'll use as our template
 const template = readFileSync(join(DIST_FOLDER, 'browser', 'index.html')).toString();
@@ -31,7 +31,7 @@ const win = domino.createWindow(template);
 
 // * NOTE :: leave this as require() since this file is built Dynamically from webpack
 // tslint:disable-next-line
-const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./dist/apps/app1/server/main.bundle');
+const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('../../dist/apps/app1/server/main.bundle');
 
 // Express Engine
 import { ngExpressEngine } from '@nguniversal/express-engine';
