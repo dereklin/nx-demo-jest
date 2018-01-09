@@ -9,7 +9,7 @@
     {
       "name": "app1",
       "root": "apps/app1/src",
-      "outDir": "dist/apps/app1",
+      "outDir": "dist/apps/app1/browser",
       "assets": [
         "assets",
         "favicon.ico"
@@ -35,7 +35,7 @@
     {
       "name": "app1-ngu-app-shell",
       "root": "apps/app1/src",
-      "outDir": "dist-server/apps/app1",
+      "outDir": "dist/apps/app1/server",
       "assets": [],
       "index": "index.html",
       "main": "main.server.ts",

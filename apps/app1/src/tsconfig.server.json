@@ -1,7 +1,7 @@
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../../dist-server/out-tsc/apps/app1",
+    "outDir": "../../../dist/out-tsc/apps/app1",
     "module": "commonjs",
     "types": ["node"]
   },
@@ -10,6 +10,7 @@
     , "../../../libs/not-found/index.ts"
   ],
   "exclude": [
+    "../../../test.ts",
     "**/*.spec.ts"
   ],
   "angularCompilerOptions": {
