@@ -8,6 +8,6 @@ describe('appReducer', () => {
     const state: App = { test: {} };
     const action: DataLoaded = { type: 'DATA_LOADED', payload: {} };
     const actual = appReducer(state, action);
-    expect(actual).toEqual({ test: {}}); 
+    expect(actual).toEqual({ test: {} });
   });
 });

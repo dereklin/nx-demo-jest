@@ -17,7 +17,7 @@ import { reducers, CustomSerializer } from './store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { storeFreeze } from 'ngrx-store-freeze';
 
-export const metaReducers: MetaReducer<any>[] = !environment.production ? [storeFreeze] : [];
+export const metaReducers: Array<MetaReducer<any>> = !environment.production ? [storeFreeze] : [];
 
 @NgModule({
   imports: [

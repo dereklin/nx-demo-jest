@@ -19,7 +19,7 @@ export interface State {
 }
 
 export const reducers: ActionReducerMap<State> = {
-  routerReducer: routerReducer
+  routerReducer
 };
 
 export const getRouterState = createFeatureSelector<RouterReducerState<RouterStateUrl>>('routerReducer');

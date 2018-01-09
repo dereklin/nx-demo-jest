@@ -25,11 +25,12 @@ const DIST_FOLDER = join(process.cwd(), 'dist/apps/app1');
 const template = readFileSync(join(DIST_FOLDER, 'browser', 'index.html')).toString();
 
 const win = domino.createWindow(template);
-(<any>global)['window'] = win;
-(<any>global)['document'] = win.document;
-(<any>global)['navigator'] = win.navigator;
+(global as any)['window'] = win;
+(global as any)['document'] = win.document;
+(global as any)['navigator'] = win.navigator;
 
 // * NOTE :: leave this as require() since this file is built Dynamically from webpack
+// tslint:disable-next-line
 const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./dist/apps/app1/server/main.bundle');
 
 // Express Engine
