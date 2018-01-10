@@ -16,6 +16,8 @@
     "serve:app1:prerender": "cd dist/apps/app1/browser && http-server",
     "build:app1:ssr": "npm run build:app1:client-and-server-bundles && npm run webpack:app1:server",
     "serve:app1:ssr": "node dist/apps/app1/server",
+    "build-serve:app1:ssr": "npm run build:app1:ssr && npm run serve:app1:ssr",
+    "build-serve:app1:ssr-prerender": "npm run build:app1:prerender && npm run serve:app1:ssr",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -57,6 +59,7 @@
     "core-js": "2.5.3",
     "jquery": "3.2.1",
     "loglevel": "1.6.0",
+    "luxon": "^0.2.12",
     "rxjs": "5.5.6",
     "zone.js": "0.8.19"
   },
