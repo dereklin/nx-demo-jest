@@ -8,7 +8,7 @@
   "include": [
     "**/*.ts"
     , "../../../libs/not-found/index.ts"
-    , "**/lazy.module.ts"
+    , "app/lazy/index.ts"
   ],
   "exclude": [
     "../../../test.ts",
