@@ -31,7 +31,9 @@
     "affected:build": "node ./node_modules/@nrwl/schematics/src/command-line/affected.js build",
     "affected:e2e": "node ./node_modules/@nrwl/schematics/src/command-line/affected.js e2e",
     "format:write": "node ./node_modules/@nrwl/schematics/src/command-line/format.js write",
-    "format:check": "node ./node_modules/@nrwl/schematics/src/command-line/format.js check"
+    "format:check": "node ./node_modules/@nrwl/schematics/src/command-line/format.js check",
+    "dyson": "dyson ./dyson",
+    "dyson:watch": "nodemon --watch dyson --exec dyson dyson"
   },
   "private": true,
   "dependencies": {
@@ -74,6 +76,12 @@
     "@types/node": "9.3.0",
     "codelyzer": "4.0.2",
     "copy-webpack-plugin": "4.3.1",
+    "cpy-cli": "1.0.1",
+    "dyson": "^2.0.0",
+    "dyson-generators": "^0.2.0",
+    "express": "4.16.2",
+    "faker": "^4.1.0",
+    "http-server": "0.10.0",
     "jasmine-core": "2.8.0",
     "jasmine-spec-reporter": "4.2.1",
     "jest": "22.0.4",
@@ -87,20 +95,18 @@
     "karma-jasmine": "1.1.1",
     "karma-jasmine-html-reporter": "0.2.2",
     "ngrx-store-freeze": "0.2.0",
+    "nodemon": "^1.14.10",
     "prettier": "1.9.2",
     "protractor": "5.2.2",
     "raw-loader": "0.5.1",
+    "reflect-metadata": "0.1.10",
     "rxjs-marbles": "2.3.0",
     "sass-loader": "6.0.6",
+    "ts-loader": "3.2.0",
     "ts-node": "4.1.0",
     "tslint": "5.8.0",
     "tslint-angular": "1.0.0",
-    "typescript": "2.6.2",
-    "ts-loader": "3.2.0",
-    "cpy-cli": "1.0.1",
-    "http-server": "0.10.0",
-    "express": "4.16.2",
-    "reflect-metadata": "0.1.10"
+    "typescript": "2.6.2"
   },
   "jest": {
     "preset": "jest-preset-angular",
