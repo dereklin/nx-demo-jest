@@ -1,3 +1,3 @@
-export const parseHostPath = pathname => {
+export function parseHostPath(pathname: string) {
     return pathname.replace(/\/[^\/]*$/, '/');
-};
+}

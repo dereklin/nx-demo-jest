@@ -23,7 +23,7 @@ import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 export const metaReducers: Array<MetaReducer<any>> = !environment.production ? [storeFreeze] : [];
 
 export let p = fromProviders.providers;
-// p = isPlatformBrowser(this.platformId) ? fromProviders.browserProviders : fromProviders.providers;
+p = isPlatformBrowser(this.platformId) ? fromProviders.browserProviders : fromProviders.providers;
 
 @NgModule({
   imports: [

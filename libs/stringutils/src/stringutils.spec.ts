@@ -1,6 +1,6 @@
 import { parseHostPath } from './stringutils';
 
-describe('Stringutils', () => {
+xdescribe('Stringutils', () => {
   describe('parseHostPath', () => {
     it('should return /apps/app1/', () => {
       const expected = '/apps/app1/';
