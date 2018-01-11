@@ -1,1 +1,1 @@
-export { Stringutils } from './src/stringutils';
+export { parseHostPath } from './src/stringutils';

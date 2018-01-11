@@ -1,1 +1,3 @@
-export class Stringutils {}
+export const parseHostPath = pathname => {
+    return pathname.replace(/\/[^\/]*$/, '/');
+};

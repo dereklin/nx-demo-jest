@@ -16,8 +16,14 @@ import { reducers, CustomSerializer } from './store';
 // not used in production
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { storeFreeze } from 'ngrx-store-freeze';
+import * as fromProviders from './providers';
+import { PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 
 export const metaReducers: Array<MetaReducer<any>> = !environment.production ? [storeFreeze] : [];
+
+export let p = fromProviders.providers;
+// p = isPlatformBrowser(this.platformId) ? fromProviders.browserProviders : fromProviders.providers;
 
 @NgModule({
   imports: [
@@ -31,6 +37,8 @@ export const metaReducers: Array<MetaReducer<any>> = !environment.production ? [
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
-  providers: [{ provide: RouterStateSerializer, useClass: CustomSerializer }, AppEffects]
+  providers: [{ provide: RouterStateSerializer, useClass: CustomSerializer }, AppEffects,
+    ...p
+  ]
 })
 export class AppModule {}
