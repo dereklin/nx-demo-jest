@@ -3,7 +3,16 @@
   "compilerOptions": {
     "outDir": "../../../dist/out-tsc/apps/app1",
     "module": "commonjs",
-    "types": ["node"]
+    "types": ["node"],
+    "baseUrl": "../../../",
+    "paths": {
+      "@nx-demo-jest/*": [
+        "libs/*"
+      ],
+      "app/*": [
+        "apps/app1/src/app/*"
+      ]
+    }
   },
   "include": [
     "**/*.ts"
