@@ -6,23 +6,12 @@
     "types": ["node"],
     "baseUrl": "../../../",
     "paths": {
-      "@nx-demo-jest/*": [
-        "libs/*"
-      ],
-      "app/*": [
-        "apps/app1/src/app/*"
-      ]
+      "@nx-demo-jest/*": ["libs/*"],
+      "app/*": ["apps/app1/src/app/*"]
     }
   },
-  "include": [
-    "**/*.ts"
-    , "../../../libs/not-found/index.ts"
-    , "app/lazy/index.ts"
-  ],
-  "exclude": [
-    "../../../test.ts",
-    "**/*.spec.ts"
-  ],
+  "include": ["**/*.ts", "../../../libs/not-found/index.ts"],
+  "exclude": ["../../../test.ts", "**/*.spec.ts"],
   "angularCompilerOptions": {
     "entryModule": "app/app.server.module#AppServerModule"
   }

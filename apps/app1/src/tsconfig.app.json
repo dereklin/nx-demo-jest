@@ -5,12 +5,9 @@
     "module": "es2015"
   },
   "include": [
-    "**/*.ts"
+    "**/*.ts",
     /* add all lazy-loaded libraries here: "../../../libs/my-lib/index.ts" */
-    , "../../../libs/not-found/index.ts"
-    , "app/lazy/index.ts"
-],
-  "exclude": [
-    "**/*.spec.ts"
-  ]
+    "../../../libs/not-found/index.ts"
+  ],
+  "exclude": ["**/*.spec.ts"]
 }
