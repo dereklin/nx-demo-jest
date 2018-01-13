@@ -16,6 +16,7 @@ import { reducers, CustomSerializer } from './store';
 // not used in production
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { storeFreeze } from 'ngrx-store-freeze';
+import { APP_BASE_HREF } from '@angular/common';
 
 export const metaReducers: Array<MetaReducer<any>> = !environment.production ? [storeFreeze] : [];
 
@@ -31,6 +32,10 @@ export const metaReducers: Array<MetaReducer<any>> = !environment.production ? [
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
-  providers: [{ provide: RouterStateSerializer, useClass: CustomSerializer }, AppEffects]
+  providers: [
+    { provide: RouterStateSerializer, useClass: CustomSerializer },
+     AppEffects,
+    { provide: APP_BASE_HREF, useValue: '/sub/app1/' }
+  ]
 })
 export class AppModule {}
