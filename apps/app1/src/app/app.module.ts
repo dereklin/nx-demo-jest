@@ -35,7 +35,7 @@ export const metaReducers: Array<MetaReducer<any>> = !environment.production ? [
   providers: [
     { provide: RouterStateSerializer, useClass: CustomSerializer },
      AppEffects,
-    { provide: APP_BASE_HREF, useValue: '/sub/app1/' }
+    { provide: APP_BASE_HREF, useValue: '/app1/browser/' }
   ]
 })
 export class AppModule {}

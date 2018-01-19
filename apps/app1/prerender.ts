@@ -14,6 +14,8 @@ import { ngExpressEngine } from '@nguniversal/express-engine';
 import { provideModuleMap } from '@nguniversal/module-map-ngfactory-loader';
 import { renderModuleFactory } from '@angular/platform-server';
 import { ROUTES } from './static.paths';
+import { APP_BASE_HREF } from '@angular/common';
+import { environment } from './src/environments/environment';
 
 // * NOTE :: leave this as require() since this file is built Dynamically from webpack
 // tslint:disable-next-line
@@ -22,7 +24,9 @@ const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('../../dist/apps/a
 const BROWSER_FOLDER = join(process.cwd(), 'browser');
 
 // Load the index.html file containing referances to your application bundle.
-const index = readFileSync(join('browser', 'index.html'), 'utf8');
+let index = readFileSync(join('browser', 'index.html'), 'utf8');
+
+index = index.replace('<head>', `<head><base href="${environment.baseHref}">`);
 
 let previousRender = Promise.resolve();
 
@@ -40,7 +44,8 @@ ROUTES.forEach( route => {
     document: index,
     url: route,
     extraProviders: [
-      provideModuleMap(LAZY_MODULE_MAP)
+      provideModuleMap(LAZY_MODULE_MAP),
+      {provide: APP_BASE_HREF, useValue: '/app1/browser/' }
     ]
   })).then( html => writeFileSync(join(fullPath, 'index.html'), html));
 });

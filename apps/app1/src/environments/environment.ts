@@ -5,6 +5,7 @@
 
 export const environment = {
   production: false,
+  baseHref: '/app1/browser/',
   httpServiceSettings: {
     endpoint: '/mydevendpoint',
     method: 'POST'

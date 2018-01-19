@@ -37,12 +37,14 @@ const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('../../dist/apps/a
 import { ngExpressEngine } from '@nguniversal/express-engine';
 // Import module map for lazy loading
 import { provideModuleMap } from '@nguniversal/module-map-ngfactory-loader';
+import { APP_BASE_HREF } from '@angular/common';
 
 // Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)
 app.engine('html', ngExpressEngine({
   bootstrap: AppServerModuleNgFactory,
   providers: [
-    provideModuleMap(LAZY_MODULE_MAP)
+    provideModuleMap(LAZY_MODULE_MAP),
+    {provide: APP_BASE_HREF, useValue: '/app1/browser/' }
   ]
 }));
 
