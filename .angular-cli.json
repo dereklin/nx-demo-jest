@@ -3,7 +3,7 @@
   "project": {
     "name": "nx-demo-jest",
     "npmScope": "nx-demo-jest",
-    "latestMigration": "20180103-update-command-line-scripts"
+    "latestMigration": "20180120-update-prettier"
   },
   "apps": [
     {
