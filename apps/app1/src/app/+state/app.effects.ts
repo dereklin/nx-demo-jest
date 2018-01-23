@@ -9,7 +9,7 @@ import { LoadData, DataLoaded } from './app.actions';
 @Injectable()
 export class AppEffects {
   @Effect()
-  loadData = this.dataPersistence.fetch('LOAD_DATA', {
+  public loadData = this.dataPersistence.fetch('LOAD_DATA', {
     run: (action: LoadData, state: AppState) => {
       return {
         type: 'DATA_LOADED',

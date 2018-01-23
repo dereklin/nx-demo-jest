@@ -12,5 +12,5 @@ export class Feature2Component implements OnInit {
     this.now = DateTime.local();
   }
 
-  ngOnInit() {}
+  public ngOnInit() {}
 }

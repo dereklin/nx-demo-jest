@@ -1,7 +1,6 @@
 {
   "extends": [
-    "tslint:recommended",
-    "tslint-angular"
+    "tslint:recommended"
   ],
   "rulesDirectory": [
     "node_modules/codelyzer",
@@ -18,6 +17,7 @@
     // "directive-selector": [true, "attribute", "my", "camelCase"],
     "import-destructuring-spacing": true,
     "no-attribute-parameter-decorator": true,
+    "no-empty": false,
     "no-forward-ref": true,
     "no-input-rename": true,
     "no-output-rename": true,

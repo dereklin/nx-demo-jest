@@ -10,12 +10,6 @@ export class LazyComponent {}
 
 @NgModule({
   declarations: [LazyComponent],
-  imports: [
-    RouterModule.forChild([
-      { path: '', component: LazyComponent, pathMatch: 'full'}
-    ])
-  ]
+  imports: [RouterModule.forChild([{ path: '', component: LazyComponent, pathMatch: 'full' }])]
 })
-export class LazyModule {
-
-}
+export class LazyModule {}

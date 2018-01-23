@@ -12,11 +12,11 @@ export class AppComponent implements OnInit {
   private logger = log.getLogger('AppComponent');
   constructor() {}
 
-  ngOnInit() {
+  public ngOnInit() {
     this.logger.debug('test');
   }
 
-  sayHello = () => {
+  public sayHello = () => {
     return 'Hello';
   };
 }

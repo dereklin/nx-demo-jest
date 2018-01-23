@@ -8,5 +8,5 @@ import { Component, OnInit } from '@angular/core';
 export class Feature3Component implements OnInit {
   constructor() {}
 
-  ngOnInit() {}
+  public ngOnInit() {}
 }

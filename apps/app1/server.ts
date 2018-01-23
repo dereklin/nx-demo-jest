@@ -40,13 +40,13 @@ import { provideModuleMap } from '@nguniversal/module-map-ngfactory-loader';
 import { APP_BASE_HREF } from '@angular/common';
 
 // Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)
-app.engine('html', ngExpressEngine({
-  bootstrap: AppServerModuleNgFactory,
-  providers: [
-    provideModuleMap(LAZY_MODULE_MAP),
-    {provide: APP_BASE_HREF, useValue: '/app1/browser/' }
-  ]
-}));
+app.engine(
+  'html',
+  ngExpressEngine({
+    bootstrap: AppServerModuleNgFactory,
+    providers: [provideModuleMap(LAZY_MODULE_MAP), { provide: APP_BASE_HREF, useValue: '/app1/browser/' }]
+  })
+);
 
 app.set('view engine', 'html');
 app.set('views', join(DIST_FOLDER, 'browser'));
@@ -56,9 +56,12 @@ app.set('views', join(DIST_FOLDER, 'browser'));
 */
 
 // Server static files from /browser
-app.get('*.*', express.static(join(DIST_FOLDER, 'browser'), {
-  maxAge: '1y'
-}));
+app.get(
+  '*.*',
+  express.static(join(DIST_FOLDER, 'browser'), {
+    maxAge: '1y'
+  })
+);
 
 // ALl regular routes use the Universal engine
 app.get('*', (req, res) => {
