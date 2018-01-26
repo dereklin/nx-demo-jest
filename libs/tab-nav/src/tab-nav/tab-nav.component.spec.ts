@@ -2,6 +2,7 @@ import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TabNavComponent } from './tab-nav.component';
+import { Dummy1Service } from '@nx-demo-jest/dummy1-service';
 
 describe('TabNavComponent', () => {
   let component: TabNavComponent;
@@ -11,7 +12,10 @@ describe('TabNavComponent', () => {
     async(() => {
       TestBed.configureTestingModule({
         declarations: [TabNavComponent],
-        schemas: [NO_ERRORS_SCHEMA]
+        schemas: [NO_ERRORS_SCHEMA],
+        providers: [
+          Dummy1Service
+        ]
       }).compileComponents();
     })
   );

@@ -5,8 +5,9 @@ import { linkTo } from "@storybook/addon-links";
 import { RouterModule } from "@angular/router";
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
-// import { TabNavComponent } from '@nx-demo-jest/tab-nav';
 import { TabNavComponent } from "../libs/tab-nav";
+
+import { Dummy1Service } from '../libs/dummy1-service'
 
 const COREROUTEBASESPACE = "go/";
 

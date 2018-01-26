@@ -91,6 +91,12 @@
       "appRoot": ""
     },
     {
+      "name": "dummy1-service",
+      "root": "libs/dummy1-service/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
       "name": "http-client-service",
       "root": "libs/http-client-service/src",
       "test": "../../../test.js",
