@@ -1,6 +1,8 @@
 import { Tab } from '../models/tab.model';
 import { Component, Input, OnInit } from '@angular/core';
 import { Dummy1Service } from '@nx-demo-jest/dummy1-service';
+// tslint:disable-next-line
+// import { Dummy1Service } from '../../../../libs/dummy1-service'
 
 @Component({
   selector: 'app-tab-nav',
