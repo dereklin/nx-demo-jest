@@ -36,7 +36,8 @@
     "format:write": "node ./node_modules/@nrwl/schematics/src/command-line/format.js write",
     "format:check": "node ./node_modules/@nrwl/schematics/src/command-line/format.js check",
     "dyson": "dyson ./dyson",
-    "dyson:watch": "nodemon --watch dyson --exec dyson dyson"
+    "dyson:watch": "nodemon --watch dyson --exec dyson dyson",
+    "playground": "angular-playground"
   },
   "private": true,
   "dependencies": {
@@ -78,6 +79,7 @@
     "@types/jquery": "3.2.17",
     "@types/lodash-es": "4.17.0",
     "@types/node": "9.3.0",
+    "angular-playground": "^3.4.0",
     "codelyzer": "4.0.2",
     "copy-webpack-plugin": "4.3.1",
     "cpy-cli": "1.0.1",

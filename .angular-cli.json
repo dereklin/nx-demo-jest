@@ -10,10 +10,7 @@
       "name": "app1",
       "root": "apps/app1/src",
       "outDir": "dist/apps/app1/browser",
-      "assets": [
-        "assets",
-        "favicon.ico"
-      ],
+      "assets": ["assets", "favicon.ico"],
       "index": "index.html",
       "main": "main.ts",
       "polyfills": "polyfills.ts",
@@ -26,6 +23,25 @@
         "styles.scss"
       ],
       "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "playground",
+      "root": "apps/playground/src",
+      "outDir": "dist/apps/playground/browser",
+      "assets": [],
+      "index": "index.html",
+      "main": "main.playground.ts",
+      "polyfills": "polyfills.ts",
+      "tsconfig": "tsconfig.app.json",
+      "styles": [
+        "../../../node_modules/bootstrap/dist/css/bootstrap.css",
+        "styles.scss"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -57,10 +73,7 @@
       "name": "app2",
       "root": "apps/app2/src",
       "outDir": "dist/apps/app2",
-      "assets": [
-        "assets",
-        "favicon.ico"
-      ],
+      "assets": ["assets", "favicon.ico"],
       "index": "index.html",
       "main": "main.ts",
       "polyfills": "polyfills.ts",
@@ -68,9 +81,7 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "../../../tsconfig.spec.json",
       "prefix": "app",
-      "styles": [
-        "styles.css"
-      ],
+      "styles": ["styles.css"],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
@@ -169,10 +180,7 @@
     "schematics": {
       "collection": "@nrwl/schematics",
       "postGenerate": "npm run format",
-      "newProject": [
-        "app",
-        "lib"
-      ]
+      "newProject": ["app", "lib"]
     },
     "styleExt": "css",
     "component": {}
