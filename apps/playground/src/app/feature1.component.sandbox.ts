@@ -1,5 +1,5 @@
 import { sandboxOf } from 'angular-playground';
-import { TabNavComponent } from '@nx-demo-jest/tab-nav';
+import { Feature1Component } from '../../../app1/src/app/feature1/feature1.component';
 import { Router, RouterModule } from '@angular/router';
 import { Dummy1Service } from '@nx-demo-jest/dummy1-service';
 import { RouterTestingModule } from '@angular/router/testing';
@@ -13,21 +13,13 @@ export const tabs = [
 ];
 
 
-export default sandboxOf(TabNavComponent, {
-  imports: [RouterModule, RouterTestingModule],
+export default sandboxOf(Feature1Component, {
+  imports: [],
   providers: [
-    Dummy1Service,
   ]
 })
-.add('with simple text', {
-  template: `<app-tab-nav [tabs]="tabs"></app-tab-nav>`,
+.add('basic', {
+  template: `<app-feature1></app-feature1>`,
   context: {
-    tabs: [
-      { value: ``, display: 'Home' },
-      { value: `f1`, display: 'Feature 1' },
-      { value: `f2`, display: 'Feature 2' },
-      { value: 'f3', display: 'Feature 3' }
-          
-    ]
   }
 });
