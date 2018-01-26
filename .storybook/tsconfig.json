@@ -5,7 +5,9 @@
   ],
   "include": [
     "../apps/**/*.ts",
-    "../libs/**/*.ts"
+    "../libs/**/*.ts",
+    "../stories/**/*.ts",
+    "../node_modules/@storybook/**/*.ts"
   ],
   "compilerOptions": {
     "noImplicitAny": false

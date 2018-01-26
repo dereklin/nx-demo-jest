@@ -4,11 +4,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   module: {
     rules: [
-      {
-        test: /\.scss$/,
-        loaders: ["raw-loader", "sass-loader"],
-        include: path.resolve(__dirname, '../')
-      }
     ]
   },
   plugins: [
