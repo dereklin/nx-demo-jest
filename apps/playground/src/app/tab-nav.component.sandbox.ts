@@ -4,15 +4,6 @@ import { Router, RouterModule } from '@angular/router';
 import { Dummy1Service } from '@nx-demo-jest/dummy1-service';
 import { RouterTestingModule } from '@angular/router/testing';
 
-
-export const tabs = [
-  { value: ``, display: 'Home' },
-  { value: `f1`, display: 'Feature 1' },
-  { value: `f2`, display: 'Feature 2' },
-  { value: 'f3', display: 'Feature 3' }
-];
-
-
 export default sandboxOf(TabNavComponent, {
   imports: [RouterModule, RouterTestingModule],
   providers: [
@@ -27,7 +18,6 @@ export default sandboxOf(TabNavComponent, {
       { value: `f1`, display: 'Feature 1' },
       { value: `f2`, display: 'Feature 2' },
       { value: 'f3', display: 'Feature 3' }
-          
     ]
   },
   styles: [`
