@@ -2,6 +2,8 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 
+const libPath = path.resolve('libs');
+
 module.exports = {
   module: {
     rules: [
@@ -11,10 +13,9 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: 'node_modules/bootstrap/dist/css/bootstrap.min.css', to: 'assets/bootstrap/bootstrap.min.css' }
     ]),
-    new webpack.NormalModuleReplacementPlugin(
-      /@nx-demo-jest\/dummy1-service/,
-      '../../../../libs/dummy1-service'
-    )
+   new webpack.NormalModuleReplacementPlugin(/@nx-demo-jest/, function(resource) {
+      resource.request = resource.request.replace(/@nx-demo-jest/, libPath);
+    })
   ]
 }
 
