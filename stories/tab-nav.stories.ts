@@ -9,7 +9,7 @@ import { Dummy1Service } from '@nx-demo-jest/dummy1-service';
 
 const COREROUTEBASESPACE = 'go/';
 
-storiesOf('my-top-nav', module).add('basic', () => ({
+storiesOf('Test|libs/TabNavComponent', module).add('basic', () => ({
   moduleMetadata: {
     imports: [],
     schemas: [NO_ERRORS_SCHEMA],

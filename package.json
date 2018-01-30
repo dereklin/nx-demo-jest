@@ -74,6 +74,7 @@
     "@storybook/addon-actions": "v3.4.0-alpha.5",
     "@storybook/addon-links": "v3.4.0-alpha.5",
     "@storybook/addon-notes": "v3.4.0-alpha.5",
+    "@storybook/addon-options": "v3.4.0-alpha.5",
     "@storybook/angular": "v3.4.0-alpha.5",
     "@types/jest": "22.0.1",
     "@types/jquery": "3.2.17",
