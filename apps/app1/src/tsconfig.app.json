@@ -9,5 +9,8 @@
     /* add all lazy-loaded libraries here: "../../../libs/my-lib/index.ts" */
     "../../../libs/not-found/index.ts"
   ],
-  "exclude": ["**/*.spec.ts"]
+  "exclude": [
+    "**/*.spec.ts",
+    "**/*.stories.ts"
+  ]
 }
