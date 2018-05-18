@@ -3,7 +3,7 @@
   "project": {
     "name": "nx-demo-jest",
     "npmScope": "nx-demo-jest",
-    "latestMigration": "20171219-add-affected-commands"
+    "latestMigration": "20180424-add-tsconfig-tools"
   },
   "apps": [
     {
@@ -30,7 +30,8 @@
       "environments": {
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
-      }
+      },
+      "tags": []
     },
     {
       "name": "app2",
@@ -55,37 +56,43 @@
       "environments": {
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
-      }
+      },
+      "tags": []
     },
     {
       "name": "http-service",
       "root": "libs/http-service/src",
       "test": "../../../test.js",
-      "appRoot": ""
+      "appRoot": "",
+      "tags": []
     },
     {
       "name": "not-found",
       "root": "libs/not-found/src",
       "test": "../../../test.js",
-      "appRoot": ""
+      "appRoot": "",
+      "tags": []
     },
     {
       "name": "session-resolver",
       "root": "libs/session-resolver/src",
       "test": "../../../test.js",
-      "appRoot": ""
+      "appRoot": "",
+      "tags": []
     },
     {
       "name": "stringutils",
       "root": "libs/stringutils/src",
       "test": "../../../test.js",
-      "appRoot": ""
+      "appRoot": "",
+      "tags": []
     },
     {
       "name": "tab-nav",
       "root": "libs/tab-nav/src",
       "test": "../../../test.js",
-      "appRoot": ""
+      "appRoot": "",
+      "tags": []
     }
   ],
   "e2e": {
