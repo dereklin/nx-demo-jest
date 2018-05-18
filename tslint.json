@@ -82,7 +82,6 @@
       true,
       "allow-null-check"
     ],
-    "typeof-compare": true,
     "unified-signatures": true,
     "variable-name": false,
     "directive-selector": [
@@ -112,11 +111,19 @@
     "nx-enforce-module-boundaries": [
       true,
       {
-        "lazyLoad": [
-          "not-found"
-        ],
-        "allow": []
+        "allow": [],
+        "depConstraints": [
+          {
+            "sourceTag": "*",
+            "onlyDependOnLibsWithTags": [
+              "*"
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "deprecation": {
+      "severity": "warn"
+    }
   }
 }
